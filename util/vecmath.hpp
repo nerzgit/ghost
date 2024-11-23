@@ -9,6 +9,7 @@
 #ifndef vecmath_hpp
 #define vecmath_hpp
 
+
 #include <glm/glm.hpp>
 
 glm::vec3 outervec(const glm::vec3 &svec1, const glm::vec3 &svec2);

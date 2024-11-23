@@ -9,6 +9,7 @@
 #ifndef statusmanager_hpp
 #define statusmanager_hpp
 
+
 #include <glm/glm.hpp>
 #include <string>
 #include <vector>

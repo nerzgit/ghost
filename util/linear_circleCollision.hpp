@@ -9,6 +9,7 @@
 #ifndef linear_circleCollision_hpp
 #define linear_circleCollision_hpp
 
+
 #include <glm/glm.hpp>
 
 class LinearCircleCollision

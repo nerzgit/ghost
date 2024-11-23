@@ -9,6 +9,7 @@
 #include "aabbCollision.hpp"
 
 #include <vector>
+
 #include <glm/glm.hpp>
 
 bool AABBCollision::AABBtoAABB(AABB *aabb1, AABB *aabb2)

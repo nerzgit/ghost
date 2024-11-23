@@ -10,6 +10,7 @@
 #define freetypelib_hpp
 
 #include <GL/glew.h>
+
 #include <glm/glm.hpp>
 #include <string>
 #include <map>

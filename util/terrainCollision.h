@@ -10,6 +10,7 @@
 #define terrainCollision_h
 
 #include <vector>
+
 #include <glm/glm.hpp>
 
 class TerrainCollision

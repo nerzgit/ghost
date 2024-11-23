@@ -1,0 +1,92 @@
+#WALTHERP38
+
+c 1 12 5 25 4 4 5 2 5 2 5 200 3 5 10 10 35 0 20 1
+
+st 8 8 56 56 0 0 0.1329 -0.45 WALTHERP38
+
+g
+tg 0 game/game/oj/weapon/tex/waltherp38.dds
+tg 1 game/game/oj/weapon/tex/waltherp38_flash.dds
+tg 2 game/game/oj/weapon/tex/waltherp38_bmp.dds
+tg 3 game/game/oj/weapon/tex/waltherp38.dds
+
+f
+tf 0 game/game/oj/_another_/transparent.dds
+tf 1 game/game/oj/weapon/tex/waltherp38_muzzle.dds
+
+a
+ka 0 game/game/kf/man_waltherp38/pose/man_arm_r0.kfm
+ka 1 game/game/kf/man_waltherp38/fire/man_arm_r0.kfm
+ka 2 game/game/kf/man_waltherp38/reload/man_arm_r0.kfm
+ka 3 game/game/kf/man_waltherp38/aim/man_arm_r0.kfm
+ka 4 game/game/kf/man_waltherp38/aimfire/man_arm_r0.kfm
+ka 5 game/game/kf/man_waltherp38/change/man_arm_r0.kfm
+
+a
+ka 0 game/game/kf/man_waltherp38/pose/man_arm_r1.kfm
+ka 1 game/game/kf/man_waltherp38/fire/man_arm_r1.kfm
+ka 2 game/game/kf/man_waltherp38/reload/man_arm_r1.kfm
+ka 3 game/game/kf/man_waltherp38/aim/man_arm_r1.kfm
+ka 4 game/game/kf/man_waltherp38/aimfire/man_arm_r1.kfm
+ka 5 game/game/kf/man_waltherp38/change/man_arm_r1.kfm
+
+a
+ka 0 game/game/kf/man_waltherp38/pose/man_arm_l0.kfm
+ka 1 game/game/kf/man_waltherp38/fire/man_arm_l0.kfm
+ka 2 game/game/kf/man_waltherp38/reload/man_arm_l0.kfm
+ka 3 game/game/kf/man_waltherp38/aim/man_arm_l0.kfm
+ka 4 game/game/kf/man_waltherp38/aimfire/man_arm_l0.kfm
+ka 5 game/game/kf/man_waltherp38/change/man_arm_l0.kfm
+
+a
+ka 0 game/game/kf/man_waltherp38/pose/man_arm_l1.kfm
+ka 1 game/game/kf/man_waltherp38/fire/man_arm_l1.kfm
+ka 2 game/game/kf/man_waltherp38/reload/man_arm_l1.kfm
+ka 3 game/game/kf/man_waltherp38/aim/man_arm_l1.kfm
+ka 4 game/game/kf/man_waltherp38/aimfire/man_arm_l1.kfm
+ka 5 game/game/kf/man_waltherp38/change/man_arm_l1.kfm
+
+w
+kw 0 game/game/kf/man_waltherp38/pose/waltherp38_body.kfm
+kw 1 game/game/kf/man_waltherp38/fire/waltherp38_body.kfm
+kw 2 game/game/kf/man_waltherp38/reload/waltherp38_body.kfm
+kw 3 game/game/kf/man_waltherp38/aim/waltherp38_body.kfm
+kw 4 game/game/kf/man_waltherp38/aimfire/waltherp38_body.kfm
+kw 5 game/game/kf/man_waltherp38/change/waltherp38_body.kfm
+ow 0 game/game/oj/weapon/obj/waltherp38_body.obj
+
+w
+kw 0 game/game/kf/man_waltherp38/pose/waltherp38_mag.kfm
+kw 1 game/game/kf/man_waltherp38/fire/waltherp38_mag.kfm
+kw 2 game/game/kf/man_waltherp38/reload/waltherp38_mag.kfm
+kw 3 game/game/kf/man_waltherp38/aim/waltherp38_mag.kfm
+kw 4 game/game/kf/man_waltherp38/aimfire/waltherp38_mag.kfm
+kw 5 game/game/kf/man_waltherp38/change/waltherp38_mag.kfm
+ow 1 game/game/oj/weapon/obj/waltherp38_mag.obj
+
+w
+kw 0 game/game/kf/man_waltherp38/pose/waltherp38_bullet.kfm
+kw 1 game/game/kf/man_waltherp38/fire/waltherp38_bullet.kfm
+kw 2 game/game/kf/man_waltherp38/reload/waltherp38_bullet.kfm
+kw 3 game/game/kf/man_waltherp38/aim/waltherp38_bullet.kfm
+kw 4 game/game/kf/man_waltherp38/aimfire/waltherp38_bullet.kfm
+kw 5 game/game/kf/man_waltherp38/change/waltherp38_bullet.kfm
+ow 2 game/game/oj/weapon/obj/waltherp38_bullet.obj
+
+w
+kw 0 game/game/kf/man_waltherp38/pose/waltherp38_head.kfm
+kw 1 game/game/kf/man_waltherp38/fire/waltherp38_head.kfm
+kw 2 game/game/kf/man_waltherp38/reload/waltherp38_head.kfm
+kw 3 game/game/kf/man_waltherp38/aim/waltherp38_head.kfm
+kw 4 game/game/kf/man_waltherp38/aimfire/waltherp38_head.kfm
+kw 5 game/game/kf/man_waltherp38/change/waltherp38_head.kfm
+ow 3 game/game/oj/weapon/obj/waltherp38_head.obj
+
+m
+om 0 game/game/oj/weapon/obj/waltherp38_muzzle.obj
+
+s
+se 0 waltherp38_fire
+se 1 waltherp38_reload
+se 2 waltherp38_change
+se 3 waltherp38_change

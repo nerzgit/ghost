@@ -10,6 +10,7 @@
 #define collisionmanager_hpp
 
 #include <vector>
+
 #include <glm/glm.hpp>
 #include <string>
 

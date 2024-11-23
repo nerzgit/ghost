@@ -10,6 +10,7 @@
 #define dijkstraAlgorithm_hpp
 
 #include <vector>
+
 #include <glm/glm.hpp>
 
 struct DijkstraNode{

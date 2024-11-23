@@ -9,6 +9,7 @@
 #ifndef delegate_hpp
 #define delegate_hpp
 
+
 #include <glm/glm.hpp>
 #include <string>
 

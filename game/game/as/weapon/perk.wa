@@ -1,0 +1,62 @@
+#PERK
+
+c 1 6 5 100 4 4 5 2 5 2 5 200 2 5 10 10 35 0 10 4
+
+st 0 0 0 0 0 0 0 0 PERKCOLA
+
+#武器テクスチャ
+g
+tg 0 game/game/oj/weapon/tex/perk_base.dds
+tg 1 game/game/oj/weapon/tex/perk_base.dds
+tg 2 game/game/oj/weapon/tex/perk_normal.dds
+tg 3 game/game/oj/weapon/tex/perk_spec.dds
+
+#右手キーフレーム大
+a
+ka 0 game/game/kf/man_perk/fire/man_arm_r0.kfm
+ka 1 game/game/kf/man_perk/fire/man_arm_r0.kfm
+ka 2 game/game/kf/man_perk/fire/man_arm_r0.kfm
+ka 3 game/game/kf/man_perk/fire/man_arm_r0.kfm
+ka 4 game/game/kf/man_perk/fire/man_arm_r0.kfm
+ka 5 game/game/kf/man_perk/fire/man_arm_r0.kfm
+
+#右手キーフレーム小
+a
+ka 0 game/game/kf/man_perk/fire/man_arm_r1.kfm
+ka 1 game/game/kf/man_perk/fire/man_arm_r1.kfm
+ka 2 game/game/kf/man_perk/fire/man_arm_r1.kfm
+ka 3 game/game/kf/man_perk/fire/man_arm_r1.kfm
+ka 4 game/game/kf/man_perk/fire/man_arm_r1.kfm
+ka 5 game/game/kf/man_perk/fire/man_arm_r1.kfm
+
+#左手キーフレーム大
+a
+ka 0 game/game/kf/man_perk/fire/man_arm_l0.kfm
+ka 1 game/game/kf/man_perk/fire/man_arm_l0.kfm
+ka 2 game/game/kf/man_perk/fire/man_arm_l0.kfm
+ka 3 game/game/kf/man_perk/fire/man_arm_l0.kfm
+ka 4 game/game/kf/man_perk/fire/man_arm_l0.kfm
+ka 5 game/game/kf/man_perk/fire/man_arm_l0.kfm
+
+#左手キーフレーム小
+a
+ka 0 game/game/kf/man_perk/fire/man_arm_l1.kfm
+ka 1 game/game/kf/man_perk/fire/man_arm_l1.kfm
+ka 2 game/game/kf/man_perk/fire/man_arm_l1.kfm
+ka 3 game/game/kf/man_perk/fire/man_arm_l1.kfm
+ka 4 game/game/kf/man_perk/fire/man_arm_l1.kfm
+ka 5 game/game/kf/man_perk/fire/man_arm_l1.kfm
+
+#武器部品キーフレームとオブジェクト
+w
+kw 0 game/game/kf/man_perk/fire/perk_body.kfm
+kw 1 game/game/kf/man_perk/fire/perk_body.kfm
+kw 2 game/game/kf/man_perk/fire/perk_body.kfm
+kw 3 game/game/kf/man_perk/fire/perk_body.kfm
+kw 4 game/game/kf/man_perk/fire/perk_body.kfm
+kw 5 game/game/kf/man_perk/fire/perk_body.kfm
+ow 0 game/game/oj/weapon/obj/perk.obj
+
+#サウンドエフェクト
+s
+se 0 drinkperk

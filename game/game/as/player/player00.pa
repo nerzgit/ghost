@@ -1,0 +1,35 @@
+#PLAYER
+
+#右手のテクスチャ
+g
+gt 0 game/game/oj/player/tex/man_arm.dds
+gt 1 game/game/oj/player/tex/man_arm_flash.dds
+gt 2 game/game/oj/player/tex/man_arm_normal.bmp
+gt 3 game/game/oj/player/tex/man_arm_specular.dds
+
+#左手のテクスチャ
+g
+gt 0 game/game/oj/player/tex/man_arm.dds
+gt 1 game/game/oj/player/tex/man_arm_flash.dds
+gt 2 game/game/oj/player/tex/man_arm_normal.bmp
+gt 3 game/game/oj/player/tex/man_arm_specular.dds
+
+#右手1のオブジェクトとウェイト
+w
+kw 0 game/game/oj/player/obj/man_arm_r_1.wgt
+ow 1 game/game/oj/player/obj/man_arm_r_1.obj
+
+#右手2のオブジェクトとウェイト
+w
+kw 0 game/game/oj/player/obj/man_arm_r_2.wgt
+ow 1 game/game/oj/player/obj/man_arm_r_2.obj
+
+#左手1のオブジェクトとウェイト
+w
+kw 0 game/game/oj/player/obj/man_arm_l_1.wgt
+ow 1 game/game/oj/player/obj/man_arm_l_1.obj
+
+#左手2のオブジェクトとウェイト
+w
+kw 0 game/game/oj/player/obj/man_arm_l_2.wgt
+ow 1 game/game/oj/player/obj/man_arm_l_2.obj

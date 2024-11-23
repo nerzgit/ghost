@@ -47,13 +47,15 @@ void CollisionManager::Init(const std::string &map)
 {
     
     // Kabezuri collision file (.obj)
-    const char *kabezuri_file = std::string("game/"+map+"/oj/map/obj/map_collision.obj").c_str();
+    std::string kabezuri_path = "game/" + map + "/oj/map/obj/map_collision.obj";
+    const char *kabezuri_file = kabezuri_path.c_str();
     
     // Read and initialize kabezuri collision
     _kabezuricollision = new KabezuriCollision(kabezuri_file);
     
     // Terrain collision file (.obj)
-    const char *terrain_file = std::string("game/"+map+"/oj/map/obj/map_terrain.obj").c_str();
+    std::string terrain_path = "game/" + map + "/oj/map/obj/map_terrain.obj";
+    const char *terrain_file = terrain_path.c_str();
     
     // Read and initialize terrain collision
     _terraincollision = new TerrainCollision(terrain_file);

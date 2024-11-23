@@ -10,6 +10,7 @@
 #define aabbCollision_hpp
 
 #include <vector>
+
 #include <glm/glm.hpp>
 
 struct AABB

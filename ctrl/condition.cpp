@@ -7,7 +7,7 @@
 //
 
 #include "condition.hpp"
-#include "key.hpp"
+#include "usge/key.hpp"
 #include "util/squareroot.hpp"
 
 Condition::Condition() : Control()

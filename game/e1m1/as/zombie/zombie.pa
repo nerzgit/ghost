@@ -1,0 +1,18 @@
+#ZOMBIE
+
+st 300 100 3
+
+gt 0 game/game/oj/zombie/tex/sa.dds
+
+kw 0 game/game/kf/zombie/karakara_enter.kfm
+kw 1 game/game/kf/zombie/karakara_run_0.kfm
+kw 2 game/game/kf/zombie/karakara_dead_0.kfm
+kw 3 game/game/kf/zombie/karakara_pose.kfm
+
+gw 0 game/game/oj/zombie/obj/karakara.wgt
+
+ow 0 game/game/oj/zombie/obj/karakara.obj
+
+dp 0 game/e1m1/as/zombie/group1.dpf
+
+sg 0 game/e1m1/as/zombie/group1.sgf

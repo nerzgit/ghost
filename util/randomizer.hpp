@@ -9,6 +9,7 @@
 #ifndef e_rnd_hpp
 #define e_rnd_hpp
 
+
 #include <glm/glm.hpp>
 
 double    Randomizer();

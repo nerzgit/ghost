@@ -3,6 +3,7 @@
 #include <string>
 #include <cstring>
 
+
 #include <glm/glm.hpp>
 
 #include "objloader.hpp"
@@ -121,7 +122,7 @@ bool loadOBJV(
 ){
     FILE * file = fopen(path, "r");
     if( file == NULL ){
-        printf("Impossible to open the file ! Are you in the right path ?\n");
+        printf("Impossible to open the file! Are you in the right path? %s\n", path);
         getchar();
         return false;
     }
@@ -199,7 +200,7 @@ bool loadOBJC(
               ){
     FILE * file = fopen(path, "r");
     if( file == NULL ){
-        printf("Impossible to open the file ! Are you in the right path ?\n");
+        printf("Impossible to open the collision map file! Are you in the right path? \n");
         getchar();
         return false;
     }

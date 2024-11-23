@@ -1,0 +1,92 @@
+#AKM
+
+c 0 8 7 25 4 4 5 2 5 2 5 140 20 5 10 10 35 0 20 1
+
+st 30 30 210 240 0 -1.18 0.1329 -1.20 AKM
+
+g
+tg 0 game/game/oj/weapon/tex/akm_color.dds
+tg 1 game/game/oj/weapon/tex/akm_color.dds
+tg 2 game/game/oj/weapon/tex/akm_bmp.dds
+tg 3 game/game/oj/weapon/tex/akm_spec.dds
+
+f
+tf 0 game/game/oj/_another_/transparent.dds
+tf 1 game/game/oj/weapon/tex/akm_muzzle.dds
+
+a
+ka 0 game/game/kf/man_akm/pose/man_arm_r0.kfm
+ka 1 game/game/kf/man_akm/fire/man_arm_r0.kfm
+ka 2 game/game/kf/man_akm/reload/man_arm_r0.kfm
+ka 3 game/game/kf/man_akm/aim/man_arm_r0.kfm
+ka 4 game/game/kf/man_akm/aimfire/man_arm_r0.kfm
+ka 5 game/game/kf/man_akm/change/man_arm_r0.kfm
+
+a
+ka 0 game/game/kf/man_akm/pose/man_arm_r1.kfm
+ka 1 game/game/kf/man_akm/fire/man_arm_r1.kfm
+ka 2 game/game/kf/man_akm/reload/man_arm_r1.kfm
+ka 3 game/game/kf/man_akm/aim/man_arm_r1.kfm
+ka 4 game/game/kf/man_akm/aimfire/man_arm_r1.kfm
+ka 5 game/game/kf/man_akm/change/man_arm_r1.kfm
+
+a
+ka 0 game/game/kf/man_akm/pose/man_arm_l0.kfm
+ka 1 game/game/kf/man_akm/fire/man_arm_l0.kfm
+ka 2 game/game/kf/man_akm/reload/man_arm_l0.kfm
+ka 3 game/game/kf/man_akm/aim/man_arm_l0.kfm
+ka 4 game/game/kf/man_akm/aimfire/man_arm_l0.kfm
+ka 5 game/game/kf/man_akm/change/man_arm_l0.kfm
+
+a
+ka 0 game/game/kf/man_akm/pose/man_arm_l1.kfm
+ka 1 game/game/kf/man_akm/fire/man_arm_l1.kfm
+ka 2 game/game/kf/man_akm/reload/man_arm_l1.kfm
+ka 3 game/game/kf/man_akm/aim/man_arm_l1.kfm
+ka 4 game/game/kf/man_akm/aimfire/man_arm_l1.kfm
+ka 5 game/game/kf/man_akm/change/man_arm_l1.kfm
+
+w
+kw 0 game/game/kf/man_akm/pose/akm0.kfm
+kw 1 game/game/kf/man_akm/fire/akm0.kfm
+kw 2 game/game/kf/man_akm/reload/akm0.kfm
+kw 3 game/game/kf/man_akm/aim/akm0.kfm
+kw 4 game/game/kf/man_akm/aimfire/akm0.kfm
+kw 5 game/game/kf/man_akm/change/akm0.kfm
+ow 0 game/game/oj/weapon/obj/akm_body.obj
+
+w
+kw 0 game/game/kf/man_akm/pose/akm1.kfm
+kw 1 game/game/kf/man_akm/fire/akm1.kfm
+kw 2 game/game/kf/man_akm/reload/akm1.kfm
+kw 3 game/game/kf/man_akm/aim/akm1.kfm
+kw 4 game/game/kf/man_akm/aimfire/akm1.kfm
+kw 5 game/game/kf/man_akm/change/akm1.kfm
+ow 1 game/game/oj/weapon/obj/akm_bolt.obj
+
+w
+kw 0 game/game/kf/man_akm/pose/akm2.kfm
+kw 1 game/game/kf/man_akm/fire/akm2.kfm
+kw 2 game/game/kf/man_akm/reload/akm2.kfm
+kw 3 game/game/kf/man_akm/aim/akm2.kfm
+kw 4 game/game/kf/man_akm/aimfire/akm2.kfm
+kw 5 game/game/kf/man_akm/change/akm2.kfm
+ow 2 game/game/oj/weapon/obj/akm_bullet.obj
+
+w
+kw 0 game/game/kf/man_akm/pose/akm3.kfm
+kw 1 game/game/kf/man_akm/fire/akm3.kfm
+kw 2 game/game/kf/man_akm/reload/akm3.kfm
+kw 3 game/game/kf/man_akm/aim/akm3.kfm
+kw 4 game/game/kf/man_akm/aimfire/akm3.kfm
+kw 5 game/game/kf/man_akm/change/akm3.kfm
+ow 3 game/game/oj/weapon/obj/akm_mag.obj
+
+m
+om 0 game/game/oj/weapon/obj/akm_muzzle.obj
+
+s
+se 0 akm_fire
+se 1 akm_reload
+se 2 akm_change
+se 3 akm_change

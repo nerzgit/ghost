@@ -10,6 +10,7 @@
 #define kabezuriCollision_hpp
 
 #include <vector>
+
 #include <glm/glm.hpp>
 
 class LinearCircleCollision;

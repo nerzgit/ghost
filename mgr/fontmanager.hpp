@@ -10,6 +10,7 @@
 #define fontmanager_hpp
 
 #include <string>
+
 #include <glm/glm.hpp>
 
 class FreeTypeLib;

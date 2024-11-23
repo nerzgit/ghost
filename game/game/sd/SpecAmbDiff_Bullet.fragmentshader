@@ -1,0 +1,91 @@
+#version 330 core
+
+in vec2 UV;
+in vec3 Position_worldspace;
+in vec3 Normal_cameraspace;
+in vec3 EyeDirection_cameraspace;
+in vec3 LightDirection_cameraspace;
+
+out vec4 color;
+
+uniform sampler2D myTextureSampler;
+uniform vec3 LightPosition_worldspace;
+uniform vec3 FlashPosition_worldspace;
+
+// Bullet Hole
+in 		vec3 	  bulletHoleTextureCoord0;
+in 		vec3 	  bulletHoleTextureCoord1;
+in 		vec3 	  bulletHoleTextureCoord2;
+in 		vec3 	  bulletHoleTextureCoord3;
+in 		vec3 	  bulletHoleTextureCoord4;
+in 		vec3 	  bulletHoleTextureCoord5;
+in 		vec3 	  bulletHoleTextureCoord6;
+in 		vec3 	  bulletHoleTextureCoord7;
+in 		vec3 	  bulletHoleTextureCoord8;
+in 		vec3 	  bulletHoleTextureCoord9;
+uniform sampler2D bulletHoleTextureSampler0;
+uniform sampler2D bulletHoleTextureSampler1;
+uniform sampler2D bulletHoleTextureSampler2;
+uniform sampler2D bulletHoleTextureSampler3;
+uniform sampler2D bulletHoleTextureSampler4;
+uniform sampler2D bulletHoleTextureSampler5;
+uniform sampler2D bulletHoleTextureSampler6;
+uniform sampler2D bulletHoleTextureSampler7;
+uniform sampler2D bulletHoleTextureSampler8;
+uniform sampler2D bulletHoleTextureSampler9;
+
+void main(){
+
+	// Base texture
+	vec3 LightColor = vec3(1.0,0.98,0.94);
+	
+	vec3 DiffuseColor  = texture( myTextureSampler, UV ).rgb;
+	vec3 AmbientColor  = vec3(0.05,0.05,0.05) * DiffuseColor;
+	vec3 SpecularColor = vec3(1.0,1.0,1.0);
+
+	float distance = length( LightPosition_worldspace - Position_worldspace );
+
+	vec3 n = normalize( Normal_cameraspace );
+	vec3 l = normalize( LightDirection_cameraspace );
+	float cosTheta = clamp( dot( n,l ), 0.0,1.0 );
+	
+	vec3 E = normalize(EyeDirection_cameraspace);
+	vec3 R = reflect(-l,n);
+	float cosAlpha = clamp( dot( E,R ), 0.0,1.0 );
+
+	vec3  FlashColor = vec3(1.0,0.7,0.0);
+	float FlashDist  = length( FlashPosition_worldspace - Position_worldspace );
+
+	vec4 decalColor = 
+	texture(bulletHoleTextureSampler0, bulletHoleTextureCoord0.xy - vec2(-0.5, -0.5) ).rgba +
+	texture(bulletHoleTextureSampler1, bulletHoleTextureCoord1.xy - vec2(-0.5, -0.5) ).rgba +
+	texture(bulletHoleTextureSampler2, bulletHoleTextureCoord2.xy - vec2(-0.5, -0.5) ).rgba +
+	texture(bulletHoleTextureSampler3, bulletHoleTextureCoord3.xy - vec2(-0.5, -0.5) ).rgba +
+	texture(bulletHoleTextureSampler4, bulletHoleTextureCoord4.xy - vec2(-0.5, -0.5) ).rgba +
+	texture(bulletHoleTextureSampler5, bulletHoleTextureCoord5.xy - vec2(-0.5, -0.5) ).rgba +
+	texture(bulletHoleTextureSampler6, bulletHoleTextureCoord6.xy - vec2(-0.5, -0.5) ).rgba +
+	texture(bulletHoleTextureSampler7, bulletHoleTextureCoord7.xy - vec2(-0.5, -0.5) ).rgba +
+	texture(bulletHoleTextureSampler8, bulletHoleTextureCoord8.xy - vec2(-0.5, -0.5) ).rgba +
+	texture(bulletHoleTextureSampler9, bulletHoleTextureCoord9.xy - vec2(-0.5, -0.5) ).rgba ;
+
+	// float decalAlpha = 
+	// texture(bulletHoleTextureSampler0, bulletHoleTextureCoord0.xy - vec2(-0.5, -0.5) ).a +
+	// texture(bulletHoleTextureSampler1, bulletHoleTextureCoord1.xy - vec2(-0.5, -0.5) ).a +
+	// texture(bulletHoleTextureSampler2, bulletHoleTextureCoord2.xy - vec2(-0.5, -0.5) ).a +
+	// texture(bulletHoleTextureSampler3, bulletHoleTextureCoord3.xy - vec2(-0.5, -0.5) ).a +
+	// texture(bulletHoleTextureSampler4, bulletHoleTextureCoord4.xy - vec2(-0.5, -0.5) ).a +
+	// texture(bulletHoleTextureSampler5, bulletHoleTextureCoord5.xy - vec2(-0.5, -0.5) ).a +
+	// texture(bulletHoleTextureSampler6, bulletHoleTextureCoord6.xy - vec2(-0.5, -0.5) ).a +
+	// texture(bulletHoleTextureSampler7, bulletHoleTextureCoord7.xy - vec2(-0.5, -0.5) ).a +
+	// texture(bulletHoleTextureSampler8, bulletHoleTextureCoord8.xy - vec2(-0.5, -0.5) ).a +
+	// texture(bulletHoleTextureSampler9, bulletHoleTextureCoord9.xy - vec2(-0.5, -0.5) ).a ;
+
+	vec3 baseColor = 
+		AmbientColor  +
+		DiffuseColor  * LightColor * 20.0 * cosTheta / (distance*distance) +
+		FlashColor    * LightColor * 10.0 * cosTheta / (FlashDist*FlashDist) +
+		SpecularColor * LightColor * 50.0 * (cosAlpha*cosAlpha*cosAlpha*cosAlpha*cosAlpha) / (distance*distance);
+
+	color = vec4(baseColor, 1.0) + decalColor * 0.5;
+
+}

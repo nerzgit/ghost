@@ -10,6 +10,7 @@
 #define global_h
 
 #include <GLFW/glfw3.h>
+
 #include <glm/glm.hpp>
 #include "usge/clock.hpp"
 

@@ -1,0 +1,92 @@
+#MAC11
+
+c 0 12 5 25 4 4 5 2 5 2 5 140 3 5 10 10 35 0 20 1
+
+st 32 32 256 256 0 -1.18 0.1329 -1.20 MAC11
+
+g
+tg 0 game/game/oj/weapon/tex/mac11_color.dds
+tg 1 game/game/oj/weapon/tex/mac11_color.dds
+tg 2 game/game/oj/weapon/tex/mac11_bmp.dds
+tg 3 game/game/oj/weapon/tex/mac11_spec.dds
+
+f
+tf 0 game/game/oj/_another_/transparent.dds
+tf 1 game/game/oj/weapon/tex/mac11_muzzle.dds
+
+a
+ka 0 game/game/kf/man_mac11/pose/man_arm_r0.kfm
+ka 1 game/game/kf/man_mac11/fire/man_arm_r0.kfm
+ka 2 game/game/kf/man_mac11/reload/man_arm_r0.kfm
+ka 3 game/game/kf/man_mac11/aim/man_arm_r0.kfm
+ka 4 game/game/kf/man_mac11/aimfire/man_arm_r0.kfm
+ka 5 game/game/kf/man_mac11/change/man_arm_r0.kfm
+
+a
+ka 0 game/game/kf/man_mac11/pose/man_arm_r1.kfm
+ka 1 game/game/kf/man_mac11/fire/man_arm_r1.kfm
+ka 2 game/game/kf/man_mac11/reload/man_arm_r1.kfm
+ka 3 game/game/kf/man_mac11/aim/man_arm_r1.kfm
+ka 4 game/game/kf/man_mac11/aimfire/man_arm_r1.kfm
+ka 5 game/game/kf/man_mac11/change/man_arm_r1.kfm
+
+a
+ka 0 game/game/kf/man_mac11/pose/man_arm_l0.kfm
+ka 1 game/game/kf/man_mac11/fire/man_arm_l0.kfm
+ka 2 game/game/kf/man_mac11/reload/man_arm_l0.kfm
+ka 3 game/game/kf/man_mac11/aim/man_arm_l0.kfm
+ka 4 game/game/kf/man_mac11/aimfire/man_arm_l0.kfm
+ka 5 game/game/kf/man_mac11/change/man_arm_l0.kfm
+
+a
+ka 0 game/game/kf/man_mac11/pose/man_arm_l1.kfm
+ka 1 game/game/kf/man_mac11/fire/man_arm_l1.kfm
+ka 2 game/game/kf/man_mac11/reload/man_arm_l1.kfm
+ka 3 game/game/kf/man_mac11/aim/man_arm_l1.kfm
+ka 4 game/game/kf/man_mac11/aimfire/man_arm_l1.kfm
+ka 5 game/game/kf/man_mac11/change/man_arm_l1.kfm
+
+w
+kw 0 game/game/kf/man_mac11/pose/mac11_body.kfm
+kw 1 game/game/kf/man_mac11/fire/mac11_body.kfm
+kw 2 game/game/kf/man_mac11/reload/mac11_body.kfm
+kw 3 game/game/kf/man_mac11/aim/mac11_body.kfm
+kw 4 game/game/kf/man_mac11/aimfire/mac11_body.kfm
+kw 5 game/game/kf/man_mac11/change/mac11_body.kfm
+ow 0 game/game/oj/weapon/obj/mac11_body.obj
+
+w
+kw 0 game/game/kf/man_mac11/pose/mac11_head.kfm
+kw 1 game/game/kf/man_mac11/fire/mac11_head.kfm
+kw 2 game/game/kf/man_mac11/reload/mac11_head.kfm
+kw 3 game/game/kf/man_mac11/aim/mac11_head.kfm
+kw 4 game/game/kf/man_mac11/aimfire/mac11_head.kfm
+kw 5 game/game/kf/man_mac11/change/mac11_head.kfm
+ow 1 game/game/oj/weapon/obj/mac11_head.obj
+
+w
+kw 0 game/game/kf/man_mac11/pose/mac11_bullet.kfm
+kw 1 game/game/kf/man_mac11/fire/mac11_bullet.kfm
+kw 2 game/game/kf/man_mac11/reload/mac11_bullet.kfm
+kw 3 game/game/kf/man_mac11/aim/mac11_bullet.kfm
+kw 4 game/game/kf/man_mac11/aimfire/mac11_bullet.kfm
+kw 5 game/game/kf/man_mac11/change/mac11_bullet.kfm
+ow 2 game/game/oj/weapon/obj/mac11_bullet.obj
+
+w
+kw 0 game/game/kf/man_mac11/pose/mac11_mag.kfm
+kw 1 game/game/kf/man_mac11/fire/mac11_mag.kfm
+kw 2 game/game/kf/man_mac11/reload/mac11_mag.kfm
+kw 3 game/game/kf/man_mac11/aim/mac11_mag.kfm
+kw 4 game/game/kf/man_mac11/aimfire/mac11_mag.kfm
+kw 5 game/game/kf/man_mac11/change/mac11_mag.kfm
+ow 3 game/game/oj/weapon/obj/mac11_mag.obj
+
+m
+om 0 game/game/oj/weapon/obj/mac11_muzzle.obj
+
+s
+se 0 mac11_fire
+se 1 mac11_reload
+se 2 mac11_change
+se 3 mac11_change
