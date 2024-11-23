@@ -1,7 +1,9 @@
 # ghost
 This is the first person shooter game inspired by call of duty black ops.
 
-Check this: https://youtu.be/Krsq-n87kZA?si=GVIqNGiL2MfAi63R
+Check this: 
+https://youtu.be/Krsq-n87kZA?si=GVIqNGiL2MfAi63R
+https://youtu.be/itVDud7MLiE?si=8hk1kxglxylHwkZB
 
 # Ready
 ## First install libraries
