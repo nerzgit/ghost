@@ -3,6 +3,8 @@
 # 2. cd build
 # 3. cmake ..
 # 4. make install
+# 5. cd ..
+# 6. ./build/ghost
 
 # 最小CMakeバージョンを指定
 cmake_minimum_required(VERSION 3.10)
